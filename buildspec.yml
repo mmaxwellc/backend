@@ -22,7 +22,6 @@ phases:
        - docker push $REPOSITORY_URI:$IMAGE_TAG
        - echo writing image definitions file...
        - printf '[{"name":"webfe","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-       - cat imagedefinitions.json
+       
 artifacts:
-  files: 
-      - "**/*"
+  files: imagedefinitions.json
