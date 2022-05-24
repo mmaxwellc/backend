@@ -17,3 +17,5 @@ COPY . .
 EXPOSE 5000
 #command to run within the container
 CMD ["npm", "start"]
+
+#thanks max
